@@ -19,11 +19,6 @@ namespace ind_project_project.UI
             Database.Instance.DatabaseWiped += (sender, args) => PopulateRecords();
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         public override void OnActivated()
         {
             PopulateRecords();
@@ -84,18 +79,17 @@ namespace ind_project_project.UI
             dataGrid.SelectAll();
         }
 
+        private void dataGrid_RowHeaderMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            DataGridViewRow? row = dataGrid.Rows[e.RowIndex];
+            StartRowEdit(row);
+        }
+
         internal void btnWipe_Click(object sender, EventArgs e)
         {
             FormConfirmWipe newForm = new FormConfirmWipe();
             newForm.StartPosition = FormStartPosition.CenterScreen;
             newForm.Show();
-            //int x0 = 
-            //newForm.Location = new Point();
-        }
-
-        private void dataGrid_ColumnRemoved(object sender, DataGridViewColumnEventArgs e)
-        {
-            //e.Column.Dispose();
         }
 
         private void dataGrid_UserDeletedRow(object sender, DataGridViewRowEventArgs e)

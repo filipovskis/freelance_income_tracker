@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             dataGrid = new DataGridView();
             date = new DataGridViewTextBoxColumn();
             Amount = new DataGridViewTextBoxColumn();
@@ -69,9 +69,8 @@
             dataGrid.ShowEditingIcon = false;
             dataGrid.Size = new Size(1190, 660);
             dataGrid.TabIndex = 0;
-            dataGrid.CellContentClick += dataGridView1_CellContentClick;
             dataGrid.CellContentDoubleClick += dataGrid_CellContentDoubleClick;
-            dataGrid.ColumnRemoved += dataGrid_ColumnRemoved;
+            dataGrid.RowHeaderMouseDoubleClick += this.dataGrid_RowHeaderMouseDoubleClick;
             dataGrid.SelectionChanged += dataGrid_SelectionChanged;
             dataGrid.UserDeletedRow += dataGrid_UserDeletedRow;
             // 
@@ -96,8 +95,8 @@
             // 
             // Income
             // 
-            dataGridViewCellStyle1.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Income.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Income.DefaultCellStyle = dataGridViewCellStyle2;
             Income.HeaderText = "Netto (EUR)";
             Income.Name = "Income";
             Income.ReadOnly = true;
