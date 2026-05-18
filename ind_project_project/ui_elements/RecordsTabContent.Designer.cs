@@ -30,6 +30,10 @@
         {
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             dataGrid = new DataGridView();
+            date = new DataGridViewTextBoxColumn();
+            Amount = new DataGridViewTextBoxColumn();
+            estimatedTax = new DataGridViewTextBoxColumn();
+            Income = new DataGridViewTextBoxColumn();
             panel1 = new Panel();
             btnWipe = new Button();
             btnEdit = new Button();
@@ -43,10 +47,6 @@
             flowLayoutPanel1 = new FlowLayoutPanel();
             label1 = new Label();
             lblTotalIncome = new Label();
-            date = new DataGridViewTextBoxColumn();
-            Amount = new DataGridViewTextBoxColumn();
-            estimatedTax = new DataGridViewTextBoxColumn();
-            Income = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)dataGrid).BeginInit();
             panel1.SuspendLayout();
             flowLayoutPanel3.SuspendLayout();
@@ -63,16 +63,44 @@
             dataGrid.Columns.AddRange(new DataGridViewColumn[] { date, Amount, estimatedTax, Income });
             dataGrid.Dock = DockStyle.Fill;
             dataGrid.Location = new Point(0, 0);
+            dataGrid.Margin = new Padding(3, 3, 3, 10);
             dataGrid.Name = "dataGrid";
             dataGrid.ReadOnly = true;
             dataGrid.ShowEditingIcon = false;
-            dataGrid.Size = new Size(1190, 730);
+            dataGrid.Size = new Size(1190, 660);
             dataGrid.TabIndex = 0;
             dataGrid.CellContentClick += dataGridView1_CellContentClick;
             dataGrid.CellContentDoubleClick += dataGrid_CellContentDoubleClick;
             dataGrid.ColumnRemoved += dataGrid_ColumnRemoved;
             dataGrid.SelectionChanged += dataGrid_SelectionChanged;
             dataGrid.UserDeletedRow += dataGrid_UserDeletedRow;
+            // 
+            // date
+            // 
+            date.HeaderText = "Date";
+            date.Name = "date";
+            date.ReadOnly = true;
+            // 
+            // Amount
+            // 
+            Amount.HeaderText = "Amount (EUR)";
+            Amount.Name = "Amount";
+            Amount.ReadOnly = true;
+            // 
+            // estimatedTax
+            // 
+            estimatedTax.HeaderText = "Estimated Tax (EUR)";
+            estimatedTax.Name = "estimatedTax";
+            estimatedTax.ReadOnly = true;
+            estimatedTax.ToolTipText = "Uses ~40%";
+            // 
+            // Income
+            // 
+            dataGridViewCellStyle1.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Income.DefaultCellStyle = dataGridViewCellStyle1;
+            Income.HeaderText = "Netto (EUR)";
+            Income.Name = "Income";
+            Income.ReadOnly = true;
             // 
             // panel1
             // 
@@ -84,6 +112,7 @@
             panel1.Controls.Add(flowLayoutPanel1);
             panel1.Dock = DockStyle.Bottom;
             panel1.Location = new Point(0, 660);
+            panel1.Margin = new Padding(3, 10, 3, 3);
             panel1.Name = "panel1";
             panel1.Padding = new Padding(10);
             panel1.Size = new Size(1190, 70);
@@ -224,39 +253,12 @@
             lblTotalIncome.TabIndex = 1;
             lblTotalIncome.Text = "-";
             // 
-            // date
-            // 
-            date.HeaderText = "Date";
-            date.Name = "date";
-            date.ReadOnly = true;
-            // 
-            // Amount
-            // 
-            Amount.HeaderText = "Amount (EUR)";
-            Amount.Name = "Amount";
-            Amount.ReadOnly = true;
-            // 
-            // estimatedTax
-            // 
-            estimatedTax.HeaderText = "Estimated Tax (EUR)";
-            estimatedTax.Name = "estimatedTax";
-            estimatedTax.ReadOnly = true;
-            estimatedTax.ToolTipText = "Uses ~40%";
-            // 
-            // Income
-            // 
-            dataGridViewCellStyle1.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Income.DefaultCellStyle = dataGridViewCellStyle1;
-            Income.HeaderText = "Netto (EUR)";
-            Income.Name = "Income";
-            Income.ReadOnly = true;
-            // 
             // RecordsTabContent
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            Controls.Add(panel1);
             Controls.Add(dataGrid);
+            Controls.Add(panel1);
             Name = "RecordsTabContent";
             Size = new Size(1190, 730);
             Load += OnLoaded;
