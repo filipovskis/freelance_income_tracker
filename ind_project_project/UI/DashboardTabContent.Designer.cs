@@ -57,7 +57,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
-            label1.Location = new Point(10, 35);
+            label1.Location = new Point(10, 45);
             label1.Margin = new Padding(0);
             label1.Name = "label1";
             label1.Size = new Size(96, 32);
@@ -68,7 +68,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
-            label2.Location = new Point(10, 111);
+            label2.Location = new Point(10, 133);
             label2.Margin = new Padding(0);
             label2.Name = "label2";
             label2.Size = new Size(121, 32);
@@ -78,7 +78,8 @@
             // hourAmtEntry
             // 
             hourAmtEntry.AutoSize = true;
-            hourAmtEntry.Location = new Point(13, 85);
+            hourAmtEntry.Location = new Point(13, 100);
+            hourAmtEntry.Margin = new Padding(3, 3, 3, 10);
             hourAmtEntry.MinimumSize = new Size(75, 0);
             hourAmtEntry.Name = "hourAmtEntry";
             hourAmtEntry.Size = new Size(75, 23);
@@ -87,7 +88,7 @@
             // minAmtEntry
             // 
             minAmtEntry.AutoSize = true;
-            minAmtEntry.Location = new Point(13, 161);
+            minAmtEntry.Location = new Point(13, 188);
             minAmtEntry.Margin = new Padding(3, 3, 3, 15);
             minAmtEntry.MinimumSize = new Size(75, 0);
             minAmtEntry.Name = "minAmtEntry";
@@ -98,9 +99,10 @@
             // 
             timeInvoiceCreate.AutoSize = true;
             timeInvoiceCreate.Dock = DockStyle.Bottom;
-            timeInvoiceCreate.Location = new Point(13, 202);
+            timeInvoiceCreate.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            timeInvoiceCreate.Location = new Point(13, 229);
             timeInvoiceCreate.Name = "timeInvoiceCreate";
-            timeInvoiceCreate.Size = new Size(268, 40);
+            timeInvoiceCreate.Size = new Size(294, 40);
             timeInvoiceCreate.TabIndex = 5;
             timeInvoiceCreate.Text = "Create";
             timeInvoiceCreate.UseVisualStyleBackColor = true;
@@ -109,12 +111,12 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 14F);
+            label4.Font = new Font("Segoe UI", 14.25F, FontStyle.Italic, GraphicsUnit.Point, 0);
             label4.ForeColor = SystemColors.GrayText;
             label4.Location = new Point(10, 10);
-            label4.Margin = new Padding(0);
+            label4.Margin = new Padding(0, 0, 0, 10);
             label4.Name = "label4";
-            label4.Size = new Size(174, 25);
+            label4.Size = new Size(168, 25);
             label4.TabIndex = 7;
             label4.Text = "Time based session";
             // 
@@ -141,20 +143,24 @@
             // lblHoursHelp
             // 
             lblHoursHelp.AutoSize = true;
-            lblHoursHelp.Location = new Point(13, 67);
+            lblHoursHelp.Font = new Font("Segoe UI", 9.75F);
+            lblHoursHelp.Location = new Point(13, 77);
+            lblHoursHelp.Margin = new Padding(3, 0, 3, 3);
             lblHoursHelp.Name = "lblHoursHelp";
-            lblHoursHelp.Size = new Size(252, 15);
+            lblHoursHelp.Size = new Size(278, 17);
             lblHoursHelp.TabIndex = 9;
             lblHoursHelp.Text = "Please input how many hours have been spent";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(13, 143);
+            label5.Font = new Font("Segoe UI", 9.75F);
+            label5.Location = new Point(13, 165);
+            label5.Margin = new Padding(3, 0, 3, 3);
             label5.Name = "label5";
-            label5.Size = new Size(268, 15);
+            label5.Size = new Size(290, 17);
             label5.TabIndex = 8;
-            label5.Text = "Please input how many minutes  have been spent";
+            label5.Text = "Please input how many minutes have been spent";
             // 
             // flowHistory
             // 
@@ -175,12 +181,12 @@
             // 
             lblHistoryTitle.AutoSize = true;
             lblHistoryTitle.Dock = DockStyle.Top;
-            lblHistoryTitle.Font = new Font("Segoe UI", 14F);
+            lblHistoryTitle.Font = new Font("Segoe UI", 14.25F, FontStyle.Italic, GraphicsUnit.Point, 0);
             lblHistoryTitle.ForeColor = SystemColors.GrayText;
             lblHistoryTitle.Location = new Point(10, 10);
-            lblHistoryTitle.Margin = new Padding(0);
+            lblHistoryTitle.Margin = new Padding(0, 0, 0, 10);
             lblHistoryTitle.Name = "lblHistoryTitle";
-            lblHistoryTitle.Size = new Size(71, 25);
+            lblHistoryTitle.Size = new Size(70, 25);
             lblHistoryTitle.TabIndex = 10;
             lblHistoryTitle.Text = "History";
             // 
@@ -203,12 +209,12 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 14F);
+            label3.Font = new Font("Segoe UI", 14.25F, FontStyle.Italic, GraphicsUnit.Point, 0);
             label3.ForeColor = SystemColors.GrayText;
             label3.Location = new Point(10, 10);
-            label3.Margin = new Padding(0);
+            label3.Margin = new Padding(0, 0, 0, 10);
             label3.Name = "label3";
-            label3.Size = new Size(126, 25);
+            label3.Size = new Size(123, 25);
             label3.TabIndex = 10;
             label3.Text = "Fixed amount";
             // 
@@ -216,7 +222,7 @@
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
-            label8.Location = new Point(10, 35);
+            label8.Location = new Point(10, 45);
             label8.Margin = new Padding(0);
             label8.Name = "label8";
             label8.Size = new Size(67, 32);
@@ -226,16 +232,18 @@
             // lblFixedHelp
             // 
             lblFixedHelp.AutoSize = true;
-            lblFixedHelp.Location = new Point(13, 67);
+            lblFixedHelp.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblFixedHelp.Location = new Point(13, 77);
+            lblFixedHelp.Margin = new Padding(3, 0, 3, 3);
             lblFixedHelp.Name = "lblFixedHelp";
-            lblFixedHelp.Size = new Size(143, 15);
+            lblFixedHelp.Size = new Size(156, 17);
             lblFixedHelp.TabIndex = 14;
             lblFixedHelp.Text = "Please input the final sum";
             // 
             // fixedAmtEntry
             // 
             fixedAmtEntry.AutoSize = true;
-            fixedAmtEntry.Location = new Point(13, 85);
+            fixedAmtEntry.Location = new Point(13, 100);
             fixedAmtEntry.Margin = new Padding(3, 3, 3, 15);
             fixedAmtEntry.Maximum = new decimal(new int[] { 999999, 0, 0, 0 });
             fixedAmtEntry.MinimumSize = new Size(75, 0);
@@ -247,9 +255,10 @@
             // 
             fixedInvoiceCreate.AutoSize = true;
             fixedInvoiceCreate.Dock = DockStyle.Bottom;
-            fixedInvoiceCreate.Location = new Point(13, 126);
+            fixedInvoiceCreate.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            fixedInvoiceCreate.Location = new Point(13, 141);
             fixedInvoiceCreate.Name = "fixedInvoiceCreate";
-            fixedInvoiceCreate.Size = new Size(268, 40);
+            fixedInvoiceCreate.Size = new Size(294, 40);
             fixedInvoiceCreate.TabIndex = 13;
             fixedInvoiceCreate.Text = "Create";
             fixedInvoiceCreate.UseVisualStyleBackColor = true;

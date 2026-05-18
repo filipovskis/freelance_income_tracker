@@ -12,11 +12,12 @@ namespace ind_project_project.Models
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
 
-        private double MinWage = (double)ConfigManager.Instance.Get<double>("NonTaxableMinimum");
+        private double MinWage => ConfigManager.Instance.Get<double>("MinimumWage");
+        private double MonthlyNonTaxableMinimum => ConfigManager.Instance.Get<double>("NonTaxableMinimum");
+
         private const double VsaoiFullRate = 0.3107;
         private const double VsaoiPensionRate = 0.10;
         private const double IinRate = 0.255;
-        private const double MonthlyNonTaxableMinimum = 550.0;
 
         internal void AddRecord(BaseRecord record)
         {

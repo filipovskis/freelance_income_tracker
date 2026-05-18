@@ -18,6 +18,7 @@ namespace ind_project_project.UI
 
         private void SettingsTabContent_Load(object sender, EventArgs e)
         {
+            entryMinWage.Value = (decimal)ConfigManager.Instance.Get<double>("MinimumWage");
             entryNonTaxable.Value = (decimal)ConfigManager.Instance.Get<double>("NonTaxableMinimum");
             estimatedTaxRate.Value = (decimal)ConfigManager.Instance.Get<double>("EstimatedTaxRate") * 100;
             hourlyRate.Value = (decimal)ConfigManager.Instance.Get<double>("DefaultHourlyRate");
@@ -39,6 +40,12 @@ namespace ind_project_project.UI
         {
             NumericUpDown senderControl = (NumericUpDown)sender;
             ConfigManager.Instance.Set("DefaultHourlyRate", (double)senderControl.Value);
+        }
+
+        private void entryMinWage_ValueChanged(object sender, EventArgs e)
+        {
+            NumericUpDown senderControl = (NumericUpDown)sender;
+            ConfigManager.Instance.Set("MinimumWage", (double)senderControl.Value);
         }
     }
 }

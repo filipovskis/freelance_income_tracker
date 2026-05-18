@@ -36,9 +36,10 @@ namespace ind_project_project.Core
 
         private void LoadDefaults()
         {
-            _settings["NonTaxableMinimum"] = 740.0;
+            _settings["NonTaxableMinimum"] = 550.0;
             _settings["EstimatedTaxRate"] = 0.35;
             _settings["DefaultHourlyRate"] = 10.0;
+            _settings["MinimumWage"] = 780.0;
         }
 
         private void LoadFromFile()

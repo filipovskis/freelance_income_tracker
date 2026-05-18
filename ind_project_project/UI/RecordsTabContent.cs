@@ -57,7 +57,7 @@ namespace ind_project_project.UI
 
             foreach (DataGridViewRow row in view.Rows)
             {
-                if (row != null && row.Selected)
+                if (row != null && row.Selected && row.Tag is BaseRecord)
                 {
                     period.AddRecord((BaseRecord)row.Tag);
                 }

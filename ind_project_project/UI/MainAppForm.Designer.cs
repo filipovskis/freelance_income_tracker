@@ -33,9 +33,9 @@
             recordsTab = new ToolStripMenuItem();
             settingsTab = new ToolStripMenuItem();
             panel1 = new Panel();
+            settingsTabContent1 = new ind_project_project.UI.SettingsTabContent();
             recordsTabContent1 = new ind_project_project.UI.RecordsTabContent();
             dashboardTabContent1 = new ind_project_project.UI.DashboardTabContent();
-            settingsTabContent1 = new ind_project_project.UI.SettingsTabContent();
             navbar.SuspendLayout();
             panel1.SuspendLayout();
             SuspendLayout();
@@ -75,7 +75,7 @@
             settingsTab.Name = "settingsTab";
             settingsTab.Size = new Size(100, 46);
             settingsTab.Text = "Settings";
-            settingsTab.Click += this.settingsTab_Click;
+            settingsTab.Click += settingsTab_Click;
             // 
             // panel1
             // 
@@ -88,6 +88,16 @@
             panel1.Padding = new Padding(10);
             panel1.Size = new Size(1215, 632);
             panel1.TabIndex = 1;
+            // 
+            // settingsTabContent1
+            // 
+            settingsTabContent1.Dock = DockStyle.Fill;
+            settingsTabContent1.Location = new Point(10, 10);
+            settingsTabContent1.Name = "settingsTabContent1";
+            settingsTabContent1.Padding = new Padding(10);
+            settingsTabContent1.Size = new Size(1195, 612);
+            settingsTabContent1.TabIndex = 2;
+            settingsTabContent1.Visible = false;
             // 
             // recordsTabContent1
             // 
@@ -106,16 +116,6 @@
             dashboardTabContent1.Name = "dashboardTabContent1";
             dashboardTabContent1.Size = new Size(1195, 612);
             dashboardTabContent1.TabIndex = 0;
-            // 
-            // settingsTabContent1
-            // 
-            settingsTabContent1.Dock = DockStyle.Fill;
-            settingsTabContent1.Location = new Point(10, 10);
-            settingsTabContent1.Name = "settingsTabContent1";
-            settingsTabContent1.Padding = new Padding(10);
-            settingsTabContent1.Size = new Size(1195, 612);
-            settingsTabContent1.TabIndex = 2;
-            settingsTabContent1.Visible = false;
             // 
             // MainForm
             // 
