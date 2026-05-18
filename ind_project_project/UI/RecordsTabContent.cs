@@ -113,9 +113,13 @@ namespace ind_project_project.UI
             }
         }
 
+        // header is considered a cell as well lol
         private void dataGrid_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            StartRowEdit(dataGrid.Rows[e.RowIndex]);
+            if (e.RowIndex > 0 && e.RowIndex < dataGrid.Rows.Count)
+            {
+                StartRowEdit(dataGrid.Rows[e.RowIndex]);
+            }
         }
 
         private void btnEdit_Click(object sender, EventArgs e)
