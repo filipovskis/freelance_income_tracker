@@ -126,6 +126,8 @@ namespace ind_project_project.UI
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
+            if (dataGrid.SelectedRows.Count < 1) return;
+
             DataGridViewRow firstSelected = dataGrid.SelectedRows[0];
             if (firstSelected != null)
             {
