@@ -1,4 +1,4 @@
-using ind_project_project.core;
+using ind_project_project.Core;
 
 namespace ind_project_project
 {

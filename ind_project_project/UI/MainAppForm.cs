@@ -1,6 +1,6 @@
-using ind_project_project.models;
-using ind_project_project.ui_elements;
-using ind_project_project.core;
+using ind_project_project.Models;
+using ind_project_project.UI;
+using ind_project_project.Core;
 
 namespace ind_project_project
 {

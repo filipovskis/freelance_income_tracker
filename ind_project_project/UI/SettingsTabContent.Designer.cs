@@ -1,4 +1,4 @@
-﻿namespace ind_project_project.ui_elements
+﻿namespace ind_project_project.UI
 {
     partial class SettingsTabContent
     {

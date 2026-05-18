@@ -33,9 +33,9 @@
             recordsTab = new ToolStripMenuItem();
             settingsTab = new ToolStripMenuItem();
             panel1 = new Panel();
-            recordsTabContent1 = new ind_project_project.ui_elements.RecordsTabContent();
-            dashboardTabContent1 = new ind_project_project.ui_elements.DashboardTabContent();
-            settingsTabContent1 = new ind_project_project.ui_elements.SettingsTabContent();
+            recordsTabContent1 = new ind_project_project.UI.RecordsTabContent();
+            dashboardTabContent1 = new ind_project_project.UI.DashboardTabContent();
+            settingsTabContent1 = new ind_project_project.UI.SettingsTabContent();
             navbar.SuspendLayout();
             panel1.SuspendLayout();
             SuspendLayout();
@@ -142,8 +142,8 @@
         private ToolStripMenuItem recordsTab;
         private ToolStripMenuItem settingsTab;
         private Panel panel1;
-        private ui_elements.DashboardTabContent dashboardTabContent1;
-        private ui_elements.RecordsTabContent recordsTabContent1;
-        private ui_elements.SettingsTabContent settingsTabContent1;
+        private UI.DashboardTabContent dashboardTabContent1;
+        private UI.RecordsTabContent recordsTabContent1;
+        private UI.SettingsTabContent settingsTabContent1;
     }
 }

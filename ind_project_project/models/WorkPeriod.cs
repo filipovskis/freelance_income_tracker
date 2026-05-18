@@ -1,10 +1,10 @@
-﻿using ind_project_project.core;
+﻿using ind_project_project.Core;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
 // to correctly calculate VSAOI and IIN
-namespace ind_project_project.models
+namespace ind_project_project.Models
 {
     internal class WorkPeriod
     {
@@ -12,7 +12,7 @@ namespace ind_project_project.models
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
 
-        private double MinWage = (double)core.ConfigManager.Instance.Get<double>("NonTaxableMinimum");
+        private double MinWage = (double)ConfigManager.Instance.Get<double>("NonTaxableMinimum");
         private const double VsaoiFullRate = 0.3107;
         private const double VsaoiPensionRate = 0.10;
         private const double IinRate = 0.255;

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using static System.Collections.Specialized.BitVector32;
 
-namespace ind_project_project.models
+namespace ind_project_project.Models
 {
     internal class TimeWorkSession : BaseRecord, ITaxable
     {

@@ -2,15 +2,16 @@
 using System.Collections.Generic;
 using System.Numerics;
 using System.Text;
+using ind_project_project.Core;
 
-namespace ind_project_project.models
+namespace ind_project_project.Models
 {
     public abstract class BaseRecord : ITaxable
     {
         public DateTime Date { get; set; }
         public int ID { get; set; }
 
-        public float EstimatedTaxRate = (float)core.ConfigManager.Instance.Get<double>("EstimatedTaxRate");
+        public float EstimatedTaxRate = (float)ConfigManager.Instance.Get<double>("EstimatedTaxRate");
 
         public abstract float GetGrossIncome();
         

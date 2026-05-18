@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Diagnostics;
-using ind_project_project.core;
-using ind_project_project.models;
+using ind_project_project.Core;
+using ind_project_project.Models;
 using Microsoft.Data.Sqlite;
 
-namespace ind_project_project.core {
+namespace ind_project_project.Core {
 
     internal class Database
     {

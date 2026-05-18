@@ -1,5 +1,5 @@
-﻿using ind_project_project.core;
-using ind_project_project.models;
+﻿using ind_project_project.Core;
+using ind_project_project.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,7 +9,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
-namespace ind_project_project.ui_elements
+namespace ind_project_project.UI
 {
     public partial class RecordsTabContent : TabContent
     {

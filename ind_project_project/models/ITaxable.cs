@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ind_project_project.models
+namespace ind_project_project.Models
 {
     public interface ITaxable
     {

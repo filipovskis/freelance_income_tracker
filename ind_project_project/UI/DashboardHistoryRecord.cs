@@ -7,7 +7,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
-namespace ind_project_project.ui_elements
+namespace ind_project_project.UI
 {
     public partial class DashboardHistoryRecord : UserControl
     {

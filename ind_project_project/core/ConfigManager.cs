@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text.Json;
 
-namespace ind_project_project.core
+namespace ind_project_project.Core
 {
     internal class ConfigChangedEventArgs : EventArgs
     {
